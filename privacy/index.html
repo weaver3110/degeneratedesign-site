@@ -56,7 +56,7 @@
 <ul>
 <li><strong>Subscription information.</strong> Apple and RevenueCat provide the information we use to recognize and manage your subscription: an account identifier, your subscription tier, and your purchase or entitlement status (for example, active or expired). Payment is handled by the App Store where you purchase your subscription. We do not receive your full payment card details. Transaction identifiers, purchase dates, and renewal or expiration dates are held by Apple and RevenueCat; our own systems store only your current tier.</li>
 <li><strong>Usage limits.</strong> To enforce your plan's weekly question allowance, we keep a per-day count of how many Judge questions you have asked. This is a count and date only; it does not include your question content.</li>
-<li><strong>Security and operational information.</strong> We record the IP address submitted with a club or event suggestion to help prevent spam and abuse. Our hosting provider (AWS) generates standard server request logs that may include IP addresses and request metadata, retained for a limited period for security and operations. We do not use advertising identifiers, device fingerprinting, or third-party analytics or diagnostics tools.</li>
+<li><strong>Security and operational information.</strong> We record the IP address submitted with a club or event suggestion to help prevent spam and abuse. Our hosting provider (AWS) generates standard server request logs that may include IP addresses and request metadata, retained for a limited period for security and operations. We use Sentry to collect crash and error diagnostics — error details, device model and operating system, app version, and technical context — so we can find and fix problems. We configure Sentry to minimize personal data: it does not receive your questions, audio, or account identifiers, and IP-address storage is disabled. We do not use advertising identifiers, cross-app tracking, or product analytics.</li>
 </ul>
 <h3>Device location</h3>
 <p>With your permission, the App uses your device location to sort the club directory by distance. The App requests a low-accuracy location and rounds the coordinate to roughly one kilometer before it leaves your device. That coarse coordinate is sent to our server only to calculate distances for the directory sort; it is not stored by us, not shared with any third party, and not written to our logs. If you prefer not to share location, you can choose your region manually instead; a manual region selection is stored only on your device.</p>
@@ -132,6 +132,11 @@
 <td>Card data and images</td>
 <td>Card and image requests, made by our servers</td>
 </tr>
+<tr>
+<td>Sentry</td>
+<td>Crash and error diagnostics</td>
+<td>Error details, device and app-version info, and technical context (no questions, audio, account identifiers, or IP)</td>
+</tr>
 </tbody>
 </table>
 <p>Card data and images are requested by our servers, not by your device, so your device's IP address is not disclosed to Scryfall through normal use of the App.</p>
@@ -142,7 +147,8 @@
 <a href="https://www.apple.com/legal/privacy/">Apple</a> ·
 <a href="https://www.revenuecat.com/privacy">RevenueCat</a> ·
 <a href="https://aws.amazon.com/privacy/">AWS</a> ·
-<a href="https://scryfall.com/docs/privacy-policy">Scryfall</a>.</p>
+<a href="https://scryfall.com/docs/privacy-policy">Scryfall</a> ·
+<a href="https://sentry.io/privacy/">Sentry</a>.</p>
 <h3>Content you share or submit for publication</h3>
 <p>If you choose to share a trade binder, the App creates a read-only web page for it at an unguessable link. That page is visible to anyone who has the link, but it is not listed in the App and is marked so search engines do not index it. It shows the binder's name and its for-trade and wants lists, including card condition, quantity, and any notes; it does not include your email address or account identifiers. You can revoke the link at any time in the App, which disables the page.</p>
 <p>When a club or event suggestion is approved and published in the directory, the published listing may show the name, region, links, contact details, and logo you provided, and is visible to other people. Your IP address and account identifier are not published.</p>
