@@ -35,7 +35,7 @@
 <body>
 <main class="doc">
   <h1>Privacy Policy — Oldschool MTG</h1>
-  <p class="meta">Effective date: October 16, 2026 · Last updated: October 22, 2026</p>
+  <p class="meta">Effective date: October 16, 2026 · Last updated: October 24, 2026</p>
 <p>Oldschool MTG (the "App") is operated by <strong>Degenerate Design LLC</strong>, a Georgia limited liability company ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and retain personal information when you use the App and related services or contact us. It also explains your privacy choices and rights.</p>
 <p>The App includes a rules reference, card catalog, trade binder, club and event directory, life counter, and AI Judge. Our Terms of Service separately govern use of the App and subscriptions.</p>
 <p>For privacy questions or requests, contact <strong>support@degeneratedesign.com</strong>.</p>
@@ -54,7 +54,7 @@
 </ul>
 <h3>Service, purchase, and technical information</h3>
 <ul>
-<li><strong>Subscription information.</strong> Apple and RevenueCat provide the information we use to recognize and manage your subscription: an account identifier, your subscription tier, and your purchase or entitlement status (for example, active or expired). Payment is handled by the App Store where you purchase your subscription. We do not receive your full payment card details. Transaction identifiers, purchase dates, and renewal or expiration dates are held by Apple and RevenueCat; our own systems store only your current tier.</li>
+<li><strong>Subscription information.</strong> Apple or Google (depending on where you subscribe) and RevenueCat provide the information we use to recognize and manage your subscription: an account identifier, your subscription tier, and your purchase or entitlement status (for example, active or expired). Payment is handled by the Apple App Store or Google Play, wherever you purchase your subscription. We do not receive your full payment card details. Transaction identifiers, purchase dates, and renewal or expiration dates are held by Apple or Google and RevenueCat; our own systems store only your current tier.</li>
 <li><strong>Usage limits.</strong> To enforce your plan's question allowance, we keep a count of how many Judge questions you have asked — a running total for the one-time Free allowance, a per-week count for Starter and Basic, and a per-subscription-year count for Pro. This is a count and date only; it does not include your question content.</li>
 <li><strong>Free-allowance abuse prevention.</strong> The Free Judge allowance is one per person and device. To help enforce this, we record the IP address your account is first seen from (kept for up to 30 days), and we may review it when many new accounts appear from one address; it is never used for advertising or tracking, and it is not used to block access on its own, since many people can share one network. On iOS, the App uses Apple's DeviceCheck service, which lets us store two yes/no flags for your device with Apple (for example, "a free allowance has already been claimed on this device"); Apple does not give us an identifier that tracks you across apps. On Android, the App uses the device identifier Android provides to this app only (it differs for every app), and we store it in hashed form for the same purpose.</li>
 <li><strong>Security and operational information.</strong> We record the IP address submitted with a club or event suggestion to help prevent spam and abuse. Our hosting provider (AWS) generates standard server request logs that may include IP addresses and request metadata, retained for a limited period for security and operations. We use Sentry to collect crash and error diagnostics — error details, device model and operating system, app version, and technical context — so we can find and fix problems. We configure Sentry to minimize personal data: it does not receive your questions, audio, or account identifiers, and IP-address storage is disabled. We do not use advertising identifiers, cross-app tracking, or product analytics.</li>
@@ -119,6 +119,11 @@
 <td>Purchase and subscription information processed by Apple</td>
 </tr>
 <tr>
+<td>Google Play</td>
+<td>Purchases and subscription billing on Android</td>
+<td>Purchase and subscription information processed by Google</td>
+</tr>
+<tr>
 <td>RevenueCat</td>
 <td>Subscription management</td>
 <td>Account identifier and purchase or entitlement status</td>
@@ -141,11 +146,12 @@
 </tbody>
 </table>
 <p>Card data and images are requested by our servers, not by your device, so your device's IP address is not disclosed to Scryfall through normal use of the App.</p>
-<p>Service providers that process information on our behalf are subject to contractual protections and restrictions appropriate to their role. The App Store and some other services may also process information independently under their own privacy policies. Provider privacy information:
+<p>Service providers that process information on our behalf are subject to contractual protections and restrictions appropriate to their role. The Apple App Store, Google Play, and some other services may also process information independently under their own privacy policies. Provider privacy information:
 <a href="https://clerk.com/legal/privacy">Clerk</a> ·
 <a href="https://www.anthropic.com/legal/privacy">Anthropic</a> ·
 <a href="https://openai.com/policies/privacy-policy">OpenAI</a> ·
 <a href="https://www.apple.com/legal/privacy/">Apple</a> ·
+<a href="https://policies.google.com/privacy">Google</a> ·
 <a href="https://www.revenuecat.com/privacy">RevenueCat</a> ·
 <a href="https://aws.amazon.com/privacy/">AWS</a> ·
 <a href="https://scryfall.com/docs/privacy-policy">Scryfall</a> ·
@@ -164,7 +170,7 @@
 <li><strong>Microphone and location:</strong> You can allow or revoke access in your device settings. If you do not grant microphone access, voice mode is unavailable. If you do not grant location access, location-based directory sorting is unavailable and you can select your region manually instead.</li>
 <li><strong>AI processing:</strong> You can withdraw permission for AI processing in the App's profile settings. The AI Judge and voice mode are unavailable without it; other features are unaffected.</li>
 <li><strong>Binders and personal information:</strong> You can delete your binders in the App and revoke any share links. To request correction or removal of personal information, contact support@degeneratedesign.com. Removing information necessary to maintain your account, such as its sign-in email address, may require deleting the account. See Section 8.</li>
-<li><strong>Subscriptions:</strong> Manage or cancel your subscription through the Apple App Store account used to purchase it. Subscription cancellation and personal-information deletion are separate actions.</li>
+<li><strong>Subscriptions:</strong> Manage or cancel your subscription through the Apple App Store or Google Play account used to purchase it. Subscription cancellation and personal-information deletion are separate actions.</li>
 </ul>
 <h2>7. Retention</h2>
 <p>We retain personal information for the periods needed to provide the relevant features and for the purposes described below. Retention in our systems and retention by providers may differ.</p>
@@ -206,7 +212,7 @@
 </tr>
 <tr>
 <td>Purchase and compliance records</td>
-<td>Your current subscription tier is retained while your account is active. Transaction and billing records are held by Apple and RevenueCat under their policies.</td>
+<td>Your current subscription tier is retained while your account is active. Transaction and billing records are held by Apple or Google and RevenueCat under their policies.</td>
 </tr>
 <tr>
 <td>Backups</td>
@@ -221,7 +227,7 @@
 <h2>8. Account and data deletion</h2>
 <p>You can delete your account in the App at <strong>Profile → Account → Delete account</strong>. You can also request deletion by emailing <strong>support@degeneratedesign.com</strong>.</p>
 <p>Deleting your account removes your account and associated personal information, including your binders, saved question history, and usage records, and removes your sign-in identity from our authentication provider (Clerk). Club or event suggestions you submitted are de-identified — kept for the directory but no longer linked to you. We complete deletion promptly, ordinarily within 30 days, subject to disclosed lawful retention exceptions and to backups expiring on their normal cycle. We may retain a limited record where necessary for legal, security, or fraud-prevention purposes. Signing out or uninstalling the App does not delete your account.</p>
-<p>Deleting your account does not automatically cancel your App Store subscription. Manage or cancel it in your Apple ID subscription settings. Paid access ends according to the App Store's rules for the plan you purchased.</p>
+<p>Deleting your account does not automatically cancel your subscription. Manage or cancel it in your Apple ID subscription settings (iOS) or Google Play subscription settings (Android). Paid access ends according to the store's rules for the plan you purchased.</p>
 <h2>9. Privacy rights</h2>
 <p>The App is offered in the United States. Depending on where you live and which laws apply, you may have rights to access, correct, delete, or obtain a portable copy of your personal information; to opt out of the sale or sharing of personal information (we do neither); and to withdraw consent where processing relies on consent. Withdrawal does not affect the lawfulness of processing before withdrawal.</p>
 <p>To make a request, email <strong>support@degeneratedesign.com</strong>. We may request information reasonably necessary to verify your identity or authority to act for another person, and we will not discriminate against you for exercising these rights. We respond within the time required by applicable law.</p>
